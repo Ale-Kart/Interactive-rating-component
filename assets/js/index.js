@@ -10,7 +10,6 @@ const getValue = (el) => {
 };
 
 btn_submitAvaliation.onclick = function (e) {
-	// e.preventDefault();
 	if (select_rating === undefined) {
 		console.log(inputs);
 		inputs.forEach(item => {
@@ -19,23 +18,23 @@ btn_submitAvaliation.onclick = function (e) {
 		});
 		return;
 	}
-	PopupRatingComponent(popupRating, select_rating)
+	PopupRatingComponent(select_rating)
 };
 
-const PopupRatingComponent = (father, data) => {
-	father.innerHTML = "";
+const PopupRatingComponent = (value) => {
+	popupRating.innerHTML = "";
 	const element = `
 	<div class="popup-rating--success">
 		<div class="popup-rating__image">
 			<img src="images/illustration-thank-you.svg" alt="">
 		</div>
 		<div class="poup-rating__body">
-			<span class="popup-rating__avaliation">You selected ${data} of 5</span>
+			<span class="popup-rating__avaliation">You selected ${value} of 5</span>
 			<h2 class="popup-rating__title" >Thank you!</h2>
 			<p class="popup-rating__text">We appreciate you taking the time to give a rating. If you ever need more support,
 				don’t hesitate to get in touch!</p>
 		</div>
 	</div>`;
 
-	father.insertAdjacentHTML("beforeend", element);
+	popupRating.insertAdjacentHTML("beforeend", element);
 }
