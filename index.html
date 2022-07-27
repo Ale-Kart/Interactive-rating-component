@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="./assets/css/index.css">
+	<title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="popup-rating">
+			<div class="popup-rating__icon">
+				<img src="images/icon-star.svg" alt="">
+			</div>
+			<div class="popup-rating__body">
+				<h3 class="popup-rating__title">How did we do?</h3>
+				<p class="popup-rating__text">
+					Please let us know how we did with your support request. All feedback is appreciated
+					to help us improve our offering!
+				</p>
+			</div>
+			<div id="frm-popup-rating">
+				<div class="popup-rating__star">
+					<div class="popup-rating__controller">
+						<input onchange="getValue(this);" type="radio" class="popup-rating__input" id="popup-rating-1"
+							name="popup-rating" value="1">
+						<label for="popup-rating-1" class="popup-rating__label">1</label>
+					</div>
+					<div class="popup-rating__controller">
+						<input onchange="getValue(this);" type="radio" class="popup-rating__input" id="popup-rating-2"
+							name="popup-rating" value="2">
+						<label for="popup-rating-2" class="popup-rating__label">2</label>
+					</div>
+					<div class="popup-rating__controller">
+						<input onchange="getValue(this);" type="radio" class="popup-rating__input" id="popup-rating-3"
+							name="popup-rating" value="3">
+						<label for="popup-rating-3" class="popup-rating__label">3</label>
+					</div>
+					<div class="popup-rating__controller">
+						<input onchange="getValue(this);" type="radio" class="popup-rating__input" id="popup-rating-4"
+							name="popup-rating" value="4">
+						<label for="popup-rating-4" class="popup-rating__label">4</label>
+					</div>
+					<div class="popup-rating__controller">
+						<input onchange="getValue(this);" type="radio" class="popup-rating__input" id="popup-rating-5"
+							name="popup-rating" value="5">
+						<label for="popup-rating-5" class="popup-rating__label">5</label>
+					</div>
+				</div>
+				<div class="popup-rating__footer">
+					<button class="popup-rating__button" id="btn-submit-avaliation" type="button">SUBMIT</button>
+				</div>
+			</div>
+
+			<!-- <div class="popup-rating--after">
+				<div class="popup-rating__image--after">
+					<img src="images/illustration-thank-you.svg" alt="">
+				</div>
+				<div class="poup-rating__body--after">
+					<span class="popup-rating__avaliation">You selected 4 o of 5</span>
+					<h4>Thank you!</h4>
+					<p>We appreciate you taking the time to give a rating. If you ever need more support,
+						don’t hesitate to get in touch!</p>
+				</div>
+			</div> -->
+		</div>
+
+	</div>
+
+	<!--
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="#">Your Name Here</a>.
+	</div> -->
+	<script src="assets/js/index.js"></script>
+</body>
+
+</html>
