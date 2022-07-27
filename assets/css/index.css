@@ -156,3 +156,32 @@ body {
 	width: max-content;
 	word-break: normal;
 }
+
+@media (max-width: 789px) {
+	.popup-rating {
+		width: 75%;
+	}
+
+	.popup-rating .popup-rating__button {
+		width: 50%;
+	}
+}
+
+@media (max-width: 375px) {
+	.popup-rating {
+		width: 80%;
+	}
+
+	.popup-rating .popup-rating__label {
+		padding: 15px;
+		font-size: 14px;
+	}
+
+	.popup-rating .popup-rating__text {
+		font-size: 14px;
+	}
+
+	.popup-rating .popup-rating__button {
+		width: 100%;
+	}
+}
